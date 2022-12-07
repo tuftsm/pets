@@ -65,7 +65,7 @@ function Home({ isAuth }) {
                     ~<br/>"Here For All Your Four-Legged Friend's Needs"<br/>~
                 </div>  
                 <div className={styles.footer}>
-                    Utilized with <em><a href="https://github.com/tuftsm/cp03.git" target="_blank">Github Repo</a></em>&emsp;&emsp;&emsp;
+                    Utilized with <em><a href="https://github.com/tuftsm/pets.git" target="_blank">Github Repo</a></em>&emsp;&emsp;&emsp;
                     All non-Matthew images licensed for use with <em>Creative Commons</em> licensing. The creator of this website does not claim to own any non-Matthew images.<br/>
                 </div>   
                 </div>

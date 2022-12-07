@@ -31,6 +31,7 @@ a {
   height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+  background-color: #BEBEBE;
 }
 
 .cpContainer {
@@ -142,6 +143,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  background-color: #BEBEBE;
 }
 
 .homePage .post {
