@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
+import styles from './styles.module.css';
 
 function CreatePost({ isAuth }) {
   const [title, setTitle] = useState("");
@@ -26,13 +27,14 @@ function CreatePost({ isAuth }) {
   }, []);
 
   return (
+    <div>
     <div className="createPostPage">
       <div className="cpContainer">
-        <h1>Create A Post</h1>
+        <h1>Review Matthew's Pet Services</h1>
         <div className="inputGp">
-          <label> Title:</label>
+          <label> Pet's Name:</label>
           <input
-            placeholder="Title..."
+            placeholder="Name..."
             onChange={(event) => {
               setTitle(event.target.value);
             }}
@@ -41,7 +43,7 @@ function CreatePost({ isAuth }) {
         <div className="inputGp">
           <label> Post:</label>
           <textarea
-            placeholder="Post..."
+            placeholder="Share experience..."
             onChange={(event) => {
               setPostText(event.target.value);
             }}
@@ -50,6 +52,14 @@ function CreatePost({ isAuth }) {
         <button onClick={createPost}> Submit Post</button>
       </div>
     </div>
+                <div className={styles.home}>
+                    ~<br/>"Here For All Your Four-Legged Friend's Needs"<br/>~
+                </div>  
+                <div className={styles.footer}>
+                    Utilized with <em><a href="https://github.com/tuftsm/cp03.git" target="_blank">Github Repo</a></em>&emsp;&emsp;&emsp;
+                    All non-Matthew images licensed for use with <em>Creative Commons</em> licensing. The creator of this website does not claim to own any non-Matthew images.<br/>
+                </div>   
+                </div>
   );
 }
 
