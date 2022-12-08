@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/firebase/build/">
       <nav>
         <Link to="/"> Matthew's Pet Services </Link>
         <Link to="/About"> About </Link>
